@@ -1,6 +1,7 @@
-body{
+body {
     display: flexbox;
 }
+
 #value {
     border: 5px thick blue;
 }

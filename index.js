@@ -13,7 +13,13 @@ function player2guess() {
 const reveal = () => {
     let winner;
     console.log(guess, player1, player2)
-    if (guess == player1) { winner = "player1" }
-    else if (guess == player2) { winner = "player2" }
+    if (guess == player1) {
+        winner = "player1";
+        document.querySelector('body').style.backgroundColor = 'blue';
+    }
+    else if (guess == player2) {
+        winner = "player2";
+        document.querySelector('body').style.backgroundColor = 'green';
+    }
     document.getElementById("value").innerHTML = guess + `${winner} is the winner`;
 }
